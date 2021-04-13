@@ -1,0 +1,129 @@
+.image_view_box {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: show .3s ease forwards;
+}
+.image_view_box_full {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: show .3s ease forwards;
+}
+@keyframes show {
+  from {
+    /* opacity: .7; */
+  } to{
+    /* opacity: 1; */
+  }
+}
+.image_view_bg {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.close_box {
+  width: 34px;
+  padding: 10px;
+  height: 34px;
+  position: absolute;
+  z-index: 11;
+  right: 10%;
+  top: 10%;
+  transition: 0.2s;
+  /* opacity: 0.7; */
+  cursor: pointer;
+}
+
+.close_box:hover {
+  transform: rotate(-135deg);
+  /* opacity: 1; */
+}
+
+.close_item_h {
+  width: 34px;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+.close_item_l {
+  height: 34px;
+  width: 4px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+.image_view_box {
+  /* width: 100%;
+  height: 100%; */
+  z-index: 10;
+  /* box-sizing: border-box; */
+  padding: 20px;
+  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  min-width: 600px;
+  /* height: calc(100vh - 50px); */
+
+  /* width: ; */
+  
+  /* transform: rotate(180deg); */
+  /* transition: transform 0.15s; */
+}
+
+.image {
+  /* max-width: 60%; */
+  max-height: 1024px;
+  cursor: pointer;
+}
+
+.rotate_btn_box {
+  /* width: 100%; */
+  bottom: 10%;
+  width: 35px;
+  z-index: 11;
+  height: 35px;
+  /* border:1px solid #999; */
+  position: absolute;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.rotate_icon:hover {
+  /* opacity: 1; */
+  transform: scale(1.1);
+}
+
+.rotate_icon {
+  width: 32px;
+  height: 32px;
+  transition: 0.15s;
+  /* opacity: 0.7; */
+  
+}
