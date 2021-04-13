@@ -13,7 +13,8 @@
 
   ```
    <ImageView full={true}>
-        <img src={record.avatar} style={{ width: 60 }} />
+        <!-- 只允许有一个标签，且必须为img -->
+        <img src={url} style={{ width: 60 }} />
    </ImageView>
   ```
 ## 效果图/Rendering ##
